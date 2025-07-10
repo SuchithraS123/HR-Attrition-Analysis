@@ -1,0 +1,14 @@
+SELECT
+  CASE 
+    WHEN Age < 25 THEN '<25'
+    WHEN Age BETWEEN 25 AND 34 THEN '25-34'
+    WHEN Age BETWEEN 35 AND 44 THEN '35-44'
+    WHEN Age BETWEEN 45 AND 54 THEN '45-54'
+    ELSE '55+' 
+  END AS Age_Group,
+  COUNT(*) AS Total_Employees,
+  SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) AS Attrition_Count,
+  ROUND(100.0 * SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) / COUNT(*), 2) AS Attrition_Rate
+FROM final_cleaned_hr_data
+GROUP BY Age_Group
+ORDER BY Age_Group;
