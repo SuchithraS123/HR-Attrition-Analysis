@@ -4,36 +4,20 @@ A professional-level end-to-end data analytics project using **Excel**, **SQL**,
 
 
 ## 📁 Project Structure
-
+'''
 HR-Attrition-Analysis/
 ├── Excel/
 │ └── final_cleaned_hr_data.xlsx
-│
 ├── SQL/
 │ ├── attrition_by_age_group.sql
 │ ├── attrition_by_department.sql
 │ ├── attrition_by_gender.sql
 │ ├── attrition_by_job_role.sql
 │ └── saved_query_results/
-│ ├── attrition_by_age_group.csv
-│ ├── attrition_by_department.csv
-│ ├── attrition_by_gender.csv
-│ ├── attrition_by_job_role.csv
-│
-├── Python/
-│ ├── attrition_analysis.ipynb
-│ └── charts/
-│ ├── attrition_count.png
-│ ├── attrition_by_age_group.png
-│ ├── attrition_by_gender.png
-│ ├── attrition_by_department.png
-│ └── attrition_by_job_role.png
-│
 ├── PowerBI/
-│ ├── HR_Attrition_Dashboard.pbix
-│ └── HR_Attrition_Dashboard.png
-│
+│ └── HR_Attrition_Dashboard.pbix
 └── README.md
+'''
 
 
 ---
